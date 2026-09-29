@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy — VACE Experiment Review</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:780px;margin:60px auto;padding:0 24px;color:#1c2833}h1,h2{line-height:1.2}a{color:#145ca4}</style>
+<main>
+<h1>Privacy policy</h1>
+<p>VACE Experiment Review · Effective date: September 29, 2026</p>
+<p>This policy describes the personal experiment publishing workflow maintained by leefanwanna. Contact: <a href="mailto:openeyeslee@gmail.com">openeyeslee@gmail.com</a>.</p>
+<h2>Data accessed and purpose</h2>
+<p>The workflow uses rclone and a Google OAuth Desktop Client to publish research review bundles to the researcher's own Google Drive. Bundles contain experiment metadata, configurations, prompts, trajectories, metrics, figures, generated videos, and evaluation logs. Drive file metadata and checksums are read to identify the destination, resume uploads, and verify file integrity.</p>
+<p>The configured OAuth scope grants Google Drive read/write access, including the ability to manage files. It is broader than access to a single experiment folder. The publishing commands use the configured <code>VACE_experiments/</code> destination.</p>
+<h2>Storage and security</h2>
+<p>Experiment data and local publication receipts are stored on the researcher's server; uploaded copies are stored in their Google Drive. OAuth credentials are stored in rclone's configuration outside the experiment project, with restricted filesystem permissions. Credentials are not intended to be included in review bundles or this public website.</p>
+<p>This static website does not collect passwords, OAuth tokens, or experiment files and contains no analytics scripts. GitHub Pages hosts the site and may process ordinary request information under GitHub's own privacy statement.</p>
+<h2>Sharing and other services</h2>
+<p>Uploads are sent to Google Drive. The workflow does not automatically publish experiment bundles or change their sharing permissions. The researcher may separately authorize ChatGPT to read selected Drive files for scientific review. Such access is controlled through that service's separate consent flow and privacy terms. Google user data is not sold or used by this workflow for advertising.</p>
+<h2>Retention, deletion, and revocation</h2>
+<p>Local experiment data and Drive bundles are retained until the researcher removes them; this publishing workflow does not automatically expire them. Google access can be revoked through the Google Account's third-party connections settings. Revoking access stops future authenticated operations but does not delete existing local files or Drive uploads. Those copies must be removed separately by their owner.</p>
+<h2>Changes and contact</h2>
+<p>If the workflow's data handling changes, this policy should be updated before the changed handling is used. For questions about this personal workflow, contact the maintainer at the email above.</p>
+<p><a href="index.html">Back to VACE Experiment Review</a></p>
+</main>
+</html>
