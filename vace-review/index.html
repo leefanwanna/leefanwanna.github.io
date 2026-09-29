@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VACE Experiment Review</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:780px;margin:60px auto;padding:0 24px;color:#1c2833}h1,h2{line-height:1.2}a{color:#145ca4}aside{padding:16px;background:#f1f5f8;border-radius:8px}</style>
+<main>
+<h1>VACE Experiment Review</h1>
+<p>A personal research workflow maintained by <a href="https://github.com/leefanwanna">leefanwanna</a> for reviewing precise motion and trajectory control in VACE video experiments.</p>
+<h2>What the workflow does</h2>
+<p>It archives existing experiment configurations, trajectories, evaluation metrics, figures, logs, and generated videos into review bundles. The researcher uses rclone on their server to upload these bundles to their own Google Drive under <code>VACE_experiments/</code> and verify remote file checksums.</p>
+<p>Google authorization is used for Drive access by rclone. This website is an informational page; it does not receive OAuth credentials or process experiment files.</p>
+<h2>Google Drive access</h2>
+<p>The current rclone configuration requests the Google Drive read/write scope. This scope can grant broader Drive access than the experiment folder. The publishing workflow targets the configured experiment directory; consent does not make the Drive files public.</p>
+<p>A separate ChatGPT conversation may review the uploaded results if the researcher explicitly connects Google Drive and selects the relevant files. That service has its own authorization and privacy terms.</p>
+<aside><a href="privacy.html">Privacy policy</a> · <a href="mailto:openeyeslee@gmail.com">Contact the maintainer</a></aside>
+</main>
+</html>
